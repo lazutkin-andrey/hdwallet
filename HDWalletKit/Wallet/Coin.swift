@@ -29,6 +29,7 @@ public enum Coin {
             fatalError("Not implemented")
         }
     }
+	
     // P2PKH
     public var publicKeyHash: UInt8 {
         switch self {
