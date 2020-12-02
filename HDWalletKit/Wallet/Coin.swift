@@ -73,6 +73,14 @@ public enum Coin {
             fatalError("Not implemented")
         }
     }
+	
+	public var testnetAddressPrefix: UInt8 {
+		switch self {
+		case .bitcoin: return 0x6F
+		default:
+			return 0
+		}
+	}
     
     public var addressPrefix:String {
         switch self {
